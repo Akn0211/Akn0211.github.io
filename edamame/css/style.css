@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+html,body,h1,h2,h3,h4,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    border: 0;
+    vertical-align: bottom;
+}
+/* リセット↑ */
+
+header{
+    text-align: center;
+}
+h1{
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background: url(../img/logo.svg)no-repeat center center/contain;
+    text-indent: 100%;
+    white-space: nowrap;
+    /* 文字が横並びになる↑ */
+    overflow: hidden;
+}
+header>p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px; 
+}
+.g-nav{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom,#635404,rgb(174, 235, 31));
+}
+.g-nav>ul{
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+}
+li{
+    width: 25%;
+}
+.g-nav a{
+    line-height: 50px;
+    display: block;
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+.g-nav li:first-of-type>a{
+    border-left: 1px solid #fff;;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.container img{
+    max-width: 100%;
+}
+.main{
+    width: 65%;
+}
+.main h2{
+    margin: 35px 0 10px;
+}
+.main-txt{
+    margin-bottom: 30px;
+}
+.main>h3{
+    margin-bottom: 20px;
+}
+.food h4{
+    margin-bottom: 10px;
+    border-left: 10px solid rgb(1, 117, 11);
+    padding-left: 10px;
+}
+.food-photo{
+    margin-bottom: 20px;
+}
+.food-txt{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+.aside{
+    width: 30%;
+}
+.aside h2{
+    margin: 35px 0 10px;
+}
+.aside-photo{
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+
+}
+
+
+@media (max-width:959px){
+    .container{
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+.aside{
+    width: 33%;
+}
+}
+@media (max-width:640px){
+    .container{
+        display: block;
+    }
+    .main{
+        width: 100%;
+    }
+    .main-text{
+        max-width: 640px;
+    }
+    .aside{
+        width: 100%;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
